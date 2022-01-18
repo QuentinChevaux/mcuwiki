@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Component/Header";
 import ChangeMovieView from "../Component/ChangeMovieView";
  
+
 function Home() {
 
     return (

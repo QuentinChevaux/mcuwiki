@@ -23,6 +23,8 @@ class ChangeMovieView extends Component {
         console.log(styles.top)     // Affiche bien les Valeurs top et left de la Div
         console.log(styles.left)
 
+        // Je ne sais pas ou changer les valeurs ou comment faire
+
     }
 
     ChangeToChronological() {
@@ -47,15 +49,18 @@ class ChangeMovieView extends Component {
 
                 console.log('Valeur Div n°' + [i], ': X = ' + ChronologicalX[i], 'Y = ' + ChronologicalY[i]);
 
-                // document.getElementById([i]).style.left = this.state.left;
+                document.getElementById("1").style.left = this.state.left;
 
-                // document.getElementById([i]).style.top = this.state.top;
+                document.getElementById("1").style.top = this.state.top;
 
             }
 
         }
   
     }
+
+    // Le clic sur le Bouton fais bouger un peu la première Div mais je ne sais pas d'ou vu que les valeurs sont plus élevée
+    // Peut être que les valeurs ne sont pas bien update ?
     
     ChangeToDate() {
 
@@ -79,9 +84,9 @@ class ChangeMovieView extends Component {
 
                 console.log('Valeur Div n°' + [i], ': X = ' + DateX[i], 'Y = ' + DateY[i]);
 
-                // document.getElementById([i]).style.left = this.state.left;
+                document.getElementById("1").style.left = this.state.left;
 
-                // document.getElementById([i]).style.top = this.state.top;
+                document.getElementById("1").style.top = this.state.top;
 
             }
 
@@ -92,7 +97,6 @@ class ChangeMovieView extends Component {
     render() {
 
         return (
-
 
             <div>
 
@@ -122,7 +126,7 @@ class ChangeMovieView extends Component {
 
                     </div>
 
-                    <div className="movie_box absolute" id="2">
+                    <div className="movie_box absolute">
 
                         <h2>Movie n°2</h2>
                         
@@ -130,7 +134,7 @@ class ChangeMovieView extends Component {
 
                     </div>
 
-                    <div  className="movie_box absolute" id="3">
+                    <div  className="movie_box absolute">
 
                         <h2>Movie n°3</h2>
                         
@@ -142,9 +146,6 @@ class ChangeMovieView extends Component {
 
 
             </div>
-
-
-            
 
         )
 
