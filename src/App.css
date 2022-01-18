@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+/* General CSS styling code and class */
+
+* {
+
+  margin: 0;
+  box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+
+  font-family: 'Marvel';
+  src: url(./Fonts/Marvel.otf);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,700;1,900&display=swap');
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex_center {
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+.relative {
+
+  position: relative;
+
+}
+
+.absolute {
+
+  position: absolute;
+
+}
+
+/* Precise CSS styling code and class */
+/* Header Styling */
+
+header {
+
+  background-color: #D8041A;
+
+}
+
+nav {
+
+  padding-top: 35px;
+
+}
+
+nav li {
+
+  list-style: none;
+
+}
+
+.navbar_link {
+
+  padding: 10px;
   color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
-.App-link {
-  color: #61dafb;
+/* .navbar_link:hover {
+
+  
+
+} */
+
+.header_title {
+
+  margin-top: 20px;
+  text-decoration: none;
+
+  color: white;
+  text-align: center;
+  font-family: Marvel;
+  font-size: 100px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Body Styling */
+
+.header_description {
+
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+}
+
+/* Homepage Movie Listing */
+
+.view_sort_div {
+
+  margin: 30px;
+
+}
+
+.view_sort_div button {
+
+  margin: 0 20px;
+  font-size: 25px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  background: none;
+
+}
+
+.view_sort_div button:hover {
+
+  cursor: pointer;
+
+}
+
+.movie_wrapper {
+
+  border: 1px solid red;
+
+  height: 500px;
+
+}
+
+.movie_box {
+
+  border: 1px solid black;
+  width: 10%;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+
+}
+
+.movie_box:nth-child(1) {
+
+  top: 10px;
+  left: 10px;
+
+}
+
+.movie_box:nth-child(2) {
+
+  bottom: 10px;
+  right: 10px;
+
+}
+
+.movie_box:nth-child(3) {
+
+  top: 200px;
+  left: 1000px;
+
 }
