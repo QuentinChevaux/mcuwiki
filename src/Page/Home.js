@@ -1,8 +1,7 @@
 import React from "react";
 import Header from "../Component/Header";
-import ChangeMovieView from "../Component/ChangeMovieView";
+import MovieList from "../Component/MovieList";
  
-
 function Home() {
 
     return (
@@ -20,7 +19,11 @@ function Home() {
 
             <section>
 
-                <ChangeMovieView />
+                <div className="movie_wrapper">
+
+                    <MovieList />
+
+                </div>
 
             </section>
 

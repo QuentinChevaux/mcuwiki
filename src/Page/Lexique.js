@@ -9,6 +9,8 @@ function Lexique() {
 
             <Header />
 
+            <h2>Page Lexique</h2>
+
         </div>
 
     )

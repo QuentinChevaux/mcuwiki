@@ -8,6 +8,9 @@ function Series() {
         <div>
 
             <Header />
+
+            <h2>Page Series</h2>
+
         </div>
 
     )

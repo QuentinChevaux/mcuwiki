@@ -14,8 +14,6 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,700;1,900&display=swap');
-
 .flex_center {
 
   display: flex;
@@ -98,64 +96,22 @@ nav li {
 
 /* Homepage Movie Listing */
 
-.view_sort_div {
-
-  margin: 30px;
-
-}
-
-.view_sort_div button {
-
-  margin: 0 20px;
-  font-size: 25px;
-  color: black;
-  font-family: 'Poppins', sans-serif;
-  border: none;
-  background: none;
-
-}
-
-.view_sort_div button:hover {
-
-  cursor: pointer;
-
-}
-
 .movie_wrapper {
 
-  border: 1px solid red;
+  border: 5px solid blue;
 
   height: 500px;
 
 }
 
-.movie_box {
+/* Movie List Div */
 
-  border: 1px solid black;
+.movie_list_div {
+
+  border: 2px solid black;
   width: 10%;
-  height: 100px;
-  margin: 20px;
   text-align: center;
-
+  margin: 20px;
+  padding: 10px 20px;
 }
 
-.movie_box:nth-child(1) {
-
-  top: 10px;
-  left: 10px;
-
-}
-
-.movie_box:nth-child(2) {
-
-  bottom: 10px;
-  right: 10px;
-
-}
-
-.movie_box:nth-child(3) {
-
-  top: 200px;
-  left: 1000px;
-
-}

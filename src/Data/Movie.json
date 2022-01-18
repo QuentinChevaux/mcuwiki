@@ -1,0 +1,38 @@
+[
+    {
+
+        "id": 1,
+        "title": "Movie N°1",
+        "description": "This is the First Movie !",
+        "date": "01-01-2000"
+
+    },
+    
+    {
+
+        "id": 5,
+        "title": "Movie N°2",
+        "description": "This is the Second Movie !",
+        "date": "12-12-2000"
+
+    },
+
+    {
+
+        "id": 3,
+        "title": "Movie N°3",
+        "description": "This is the Third Movie !",
+        "date": "06-06-2000"
+
+    },
+
+    {
+
+        "id": 4,
+        "title": "Movie N°4",
+        "description": "This is the Fourth Movie !",
+        "date": "01-02-2000"
+
+    }
+
+]

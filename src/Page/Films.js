@@ -9,6 +9,8 @@ function Films() {
 
             <Header />
 
+            <h2>Page Films</h2>
+
         </div>
 
     )
