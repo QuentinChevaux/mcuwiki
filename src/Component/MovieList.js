@@ -18,11 +18,9 @@ class MovieList extends Component {
     
     SortChronologicaly() {
 
-        const {MovieList} = this.state
-
         // LE SORT NE FONCTIONNE PAS JE NE COMPREND PAS POURQUOI :|
         
-        this.setState({MovieList: MovieList.sort((a,b) => a.id < b.id)})
+        this.setState({MovieList: this.state.MovieList.sort((a,b) => a.id < b.id)})
 
         console.log(MovieList);
 
