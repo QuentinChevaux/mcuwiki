@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Component/Header";
-import ChangeMovieViewClass from "../Component/ChangeMovieViewClass";
+import ChangeMovieView from "../Component/ChangeMovieView";
  
 function Home() {
 
@@ -21,9 +21,9 @@ function Home() {
 
                 {/* <ChangeMovieView /> */}
 
-                <ChangeMovieViewClass />
+                <ChangeMovieView />
 
-                <div className="movie_wrapper relative">
+                {/* <div className="movie_wrapper relative">
 
                     <div ref={this.ref} className="movie_box absolute" id="1">
 
@@ -49,7 +49,7 @@ function Home() {
 
                     </div>
 
-                </div>
+                </div> */}
 
             </section>
 

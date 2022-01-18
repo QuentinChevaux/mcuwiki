@@ -1,58 +1,154 @@
-import React, { useState, useEffect } from "react";
+import React, { Component } from 'react';
 
-function ChangeMovieView() {
+class ChangeMovieView extends Component {
 
-    let [view, setView] = useState(0)  // 0 = Chronological View, 1 = Date View
+    constructor(props) {
 
-    let originalvalueX = [10, 20, 200];
+        super(props)
+
+        this.state = {top: '0', left: '0', view: '0'}
+
+        this.ChangeToChronological = this.ChangeToChronological.bind(this)
+
+        this.ChangeToDate = this.ChangeToDate.bind(this)
+
+        this.ref = React.createRef()
+
+    }
+
+    componentDidMount() {
+
+        const styles = getComputedStyle(this.ref.current)
+
+        console.log(styles.top)     // Affiche bien les Valeurs top et left de la Div
+        console.log(styles.left)
+
+    }
+
+    ChangeToChronological() {
+        
+        this.state.view = 0;
+
+        let ChronologicalX = [10, 20, 200];
     
-    let originalvalueY = [10, 500, 1000];
+        let ChronologicalY = [10, 500, 1000];
 
-    useEffect( () => {
+        let length_array = ChronologicalX.length;
 
-        if(view == 0) {
+        if (this.state.view == 0) {
 
             console.log('La vue est en Vue Chronologique');
 
-            for( let i = 0; i < originalvalueX.length; i++) {
+            for( let i = 0; i < length_array; i++) {
 
-                console.log(originalvalueX[i]);
+                this.setState({left: ChronologicalX[i]});
 
-                // document.getElementById({i}).style.left = originalvalueX[i];
+                this.setState({top: ChronologicalY[i]})
+
+                console.log('Valeur Div n°' + [i], ': X = ' + ChronologicalX[i], 'Y = ' + ChronologicalY[i]);
+
+                // document.getElementById([i]).style.left = this.state.left;
+
+                // document.getElementById([i]).style.top = this.state.top;
 
             }
-            
-        }
-        
-        if(view == 1) {
-            
-            console.log('La vue est en vue par Date de Sortie')
-
-            
 
         }
+  
+    }
+    
+    ChangeToDate() {
 
-    }, [view]);
+        this.state.view = 1;
 
-    return (
+        let DateX = [50, 400, 800];
 
-        <div className="flex_center view_sort_div">
+        let DateY = [60, 200, 600];
 
-                <div>
+        let length_array = DateX.length
 
-                    <button onClick={ () => setView(0)}>Vue Chronologique</button>
+        if (this.state.view == 1) {
+
+            console.log('La vue est en Vue par Date de Sortie');
+
+            for( let i = 0; i < length_array; i++) {
+
+                this.setState({left: DateX[i]});
+
+                this.setState({top: DateY[i]});
+
+                console.log('Valeur Div n°' + [i], ': X = ' + DateX[i], 'Y = ' + DateY[i]);
+
+                // document.getElementById([i]).style.left = this.state.left;
+
+                // document.getElementById([i]).style.top = this.state.top;
+
+            }
+
+        }
+
+    }
+
+    render() {
+
+        return (
+
+
+            <div>
+
+                <div className="flex_center view_sort_div">
+
+                    <div>
+
+                        <button onClick={this.ChangeToChronological}>Vue Chronologique</button>
+
+                    </div>
+
+                    <div>
+
+                        <button onClick={this.ChangeToDate}>Vue par Date de Sortie</button>
+
+                    </div>
 
                 </div>
 
-                <div>
+                <div className="movie_wrapper relative">
 
-                    <button onClick={ () => setView(1)}>Vue par Date de Sortie</button>
+                    <div ref={this.ref} className="movie_box absolute" id="1">
+
+                        <h2>Movie n°1</h2>
+                        
+                        <p>This is the First movie</p>
+
+                    </div>
+
+                    <div className="movie_box absolute" id="2">
+
+                        <h2>Movie n°2</h2>
+                        
+                        <p>This is the Second movie</p>
+
+                    </div>
+
+                    <div  className="movie_box absolute" id="3">
+
+                        <h2>Movie n°3</h2>
+                        
+                        <p>This is the Third movie</p>
+
+                    </div>
 
                 </div>
 
-        </div>
 
-    )
+            </div>
+
+
+            
+
+        )
+
+    }
 
 }
 
