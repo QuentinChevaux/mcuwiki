@@ -19,37 +19,7 @@ function Home() {
 
             <section>
 
-                {/* <ChangeMovieView /> */}
-
                 <ChangeMovieView />
-
-                {/* <div className="movie_wrapper relative">
-
-                    <div ref={this.ref} className="movie_box absolute" id="1">
-
-                        <h2>Movie n°1</h2>
-                        
-                        <p>This is the First movie</p>
-
-                    </div>
-
-                    <div className="movie_box absolute" id="2">
-
-                        <h2>Movie n°2</h2>
-                        
-                        <p>This is the Second movie</p>
-
-                    </div>
-
-                    <div className="movie_box absolute" id="3">
-
-                        <h2>Movie n°3</h2>
-                        
-                        <p>This is the Third movie</p>
-
-                    </div>
-
-                </div> */}
 
             </section>
 
