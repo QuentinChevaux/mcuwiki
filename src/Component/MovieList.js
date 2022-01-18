@@ -8,7 +8,7 @@ class MovieList extends Component {
 
         super(props)
 
-        this.state = {MovieList: []}
+        this.state = {movieList: []}
 
         this.SortChronologicaly = this.SortChronologicaly.bind(this)
 
@@ -20,28 +20,27 @@ class MovieList extends Component {
 
         // LE SORT NE FONCTIONNE PAS JE NE COMPREND PAS POURQUOI :|
         
-        this.setState({MovieList: this.state.MovieList.sort((a,b) => a.id < b.id)})
+        this.setState({movieList: this.state.movieList.sort((a,b) => a.id > b.id)})
 
-        console.log(MovieList);
 
     }
     
     SortDate() {
         
-        this.setState({MovieList: this.state.MovieList.reverse()})
+        this.setState({movieList: this.state.movieList.reverse()})
 
         
     }
     
     componentDidMount() {
 
-        this.setState({MovieList: MovieData})
+        this.setState({movieList: MovieData})
 
     }
 
     render () {
 
-        const {MovieList} = this.state;
+        const {movieList} = this.state;
         
         return (
 
@@ -57,7 +56,7 @@ class MovieList extends Component {
 
                 <div className="flex_center">
 
-                    {MovieList.map((item, index) => {
+                    {movieList.map((item, index) => {
 
                         return <MovieDetail 
                                     movie = {item} 
