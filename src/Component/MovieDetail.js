@@ -10,13 +10,11 @@ class MovieDetail extends Component {
 
             <div className="movie_list_div">
 
-                        
                 <h2>{movie.title}</h2>
 
                 <p>{movie.description}</p>
 
                 <p>{movie.date}</p>
-
 
             </div>
 

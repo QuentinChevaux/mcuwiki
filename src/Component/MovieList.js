@@ -17,17 +17,36 @@ class MovieList extends Component {
     }
     
     SortChronologicaly() {
-
-        // LE SORT NE FONCTIONNE PAS JE NE COMPREND PAS POURQUOI :|
         
-        this.setState({movieList: this.state.movieList.sort((a,b) => a.id > b.id)})
+        this.setState({movieList: [...this.state.movieList].sort((a, b) => {
 
+            if (a.id < b.id) {
+                return -1;
+            }
+            if (a.id > b.id) {
+                return 1;
+            }
+                return 0;
+            })
+
+        });
 
     }
     
     SortDate() {
         
-        this.setState({movieList: this.state.movieList.reverse()})
+        this.setState({movieList: [...this.state.movieList].sort((a, b) => {
+
+            if (a.date < b.date) {
+                return -1;
+            }
+            if (a.date > b.date) {
+                return 1;
+            }
+                return 0;
+            })
+
+        });
 
         
     }
@@ -50,7 +69,7 @@ class MovieList extends Component {
 
                     <button onClick={this.SortChronologicaly}>Sort Chronologique</button>
 
-                    <button onClick={this.SortDate}>Reverse</button>
+                    <button onClick={this.SortDate}>Sort par date</button>
 
                 </div>
 
