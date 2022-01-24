@@ -71,6 +71,8 @@ class MovieList extends Component {
 
                     <button onClick={this.SortDate}>Sort par date</button>
 
+                    <p>Tutoriel si la personne n'est pas familière avec le site pour montrer les fonctionnalitées avec système de cookie et se souvenir que le tuto à été passé</p>
+
                 </div>
 
                 <div className="flex_center">
