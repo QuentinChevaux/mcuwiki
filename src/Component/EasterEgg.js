@@ -6,10 +6,17 @@ function EasterEgg() {
 
     let audio = new Audio(sound)
 
-    const start = () => {
+    let start_audio = () => {
 
         audio.volume = .05;
         audio.play();
+
+    }
+
+    let spacestoneclicked = () => {
+
+        alert('Space Stone Clicked');
+        start_audio();
 
     }
 
@@ -17,7 +24,7 @@ function EasterEgg() {
         
         <div>
 
-            <img src={SpaceStone} onClick={start} className='stone absolute' id='spacestone'/>
+            <img src={SpaceStone} onClick={spacestoneclicked} className='stone absolute' id='spacestone'/>
 
         </div>
 
