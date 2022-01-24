@@ -96,6 +96,7 @@ nav li {
   background-image: url(./Images/background_movie_section.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: fixed;
 
 }
 
@@ -182,5 +183,15 @@ nav li {
   opacity: 1;
   transform: translateY(0);
   background-color: rgba(211, 211, 211, .75);
+
+}
+
+/* Stone Easter Egg */
+
+.stone {
+
+  top: 44.9%;
+  right: 9.15%;
+  width: 10px;
 
 }

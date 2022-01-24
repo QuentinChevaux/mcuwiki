@@ -1,23 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import sound from '../Audio/a.mp3'
+import SpaceStone from '../Images/space_stone.png';
 
 function EasterEgg() {
 
     let audio = new Audio(sound)
 
-    let button1_clicked = false;
-
     const start = () => {
 
         audio.volume = .05;
         audio.play();
-        button1_clicked = true
-
-    }
-
-    if (button1_clicked) {
-
-        alert('gjerklgjel');
 
     }
 
@@ -25,7 +17,7 @@ function EasterEgg() {
         
         <div>
 
-            <button onClick={start}>Play</button>
+            <img src={SpaceStone} onClick={start} className='stone absolute' id='spacestone'/>
 
         </div>
 
