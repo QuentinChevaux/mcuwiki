@@ -8,13 +8,17 @@ class MovieDetail extends Component {
 
         return (
 
-            <div className="movie_list_div">
+            <div className="movie_list_div flex_center" style={{ backgroundImage : `url('${movie.background}')`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
 
-                <h2>{movie.title}</h2>
+                <div className="movie_list_div_content">
 
-                <p>{movie.description}</p>
+                    <p className="movie_list_title"><strong>{movie.title}</strong></p>
 
-                <p>{movie.date}</p>
+                    <p className="movie_list_description">{movie.description}</p>
+
+                    <p className="movie_list_date">{movie.date}</p>
+
+                </div>
 
             </div>
 

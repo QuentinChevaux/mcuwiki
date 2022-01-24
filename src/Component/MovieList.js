@@ -20,10 +20,10 @@ class MovieList extends Component {
         
         this.setState({movieList: [...this.state.movieList].sort((a, b) => {
 
-            if (a.id < b.id) {
+            if (a.id_chronological < b.id_chronological) {
                 return -1;
             }
-            if (a.id > b.id) {
+            if (a.id_chronological > b.id_chronological) {
                 return 1;
             }
                 return 0;
@@ -37,10 +37,10 @@ class MovieList extends Component {
         
         this.setState({movieList: [...this.state.movieList].sort((a, b) => {
 
-            if (a.date < b.date) {
+            if (a.id_date < b.id_date) {
                 return -1;
             }
-            if (a.date > b.date) {
+            if (a.id_date > b.id_date) {
                 return 1;
             }
                 return 0;
@@ -65,7 +65,7 @@ class MovieList extends Component {
 
             <div>
 
-                <div>
+                <div className="sort_button_div">
 
                     <button onClick={this.SortChronologicaly}>Sort Chronologique</button>
 
@@ -78,7 +78,7 @@ class MovieList extends Component {
                     {movieList.map((item, index) => {
 
                         return <MovieDetail 
-                                    movie = {item} 
+                                    movie = {item}
                                     key = {`movie-list-key ${index}`}
                                 />  
 
