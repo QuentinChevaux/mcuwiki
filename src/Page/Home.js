@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Component/Header";
 import MovieList from "../Component/MovieList";
+import EasterEgg from "../Component/EasterEgg";
 
 function Home() {
 
@@ -44,6 +45,8 @@ function Home() {
                 </div>
 
             </section>
+
+            <EasterEgg />
 
         </div>
 
