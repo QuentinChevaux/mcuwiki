@@ -1,4 +1,4 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 import MovieData from "../Data/Movie.json";
 import MovieDetail from "./MovieDetail";
 
@@ -67,11 +67,17 @@ class MovieList extends Component {
 
                 <div className="sort_button_div">
 
-                    <button onClick={this.SortChronologicaly}>Sort Chronologique</button>
+                    <h2>Choisissez comment vous voulez trier les Films : </h2>
 
-                    <button onClick={this.SortDate}>Sort par date</button>
+                    <button onClick={this.SortChronologicaly}>Ordre Chronologique</button>
+
+                    <button onClick={this.SortDate}>Date de Sortie</button>
 
                     <p>Tutoriel si la personne n'est pas familière avec le site pour montrer les fonctionnalitées avec système de cookie et se souvenir que le tuto à été passé</p>
+
+                    <p>Thanos the End is Near Easter Egg with the Stones</p>
+
+                    <p></p>
 
                 </div>
 
@@ -79,7 +85,7 @@ class MovieList extends Component {
 
                     {movieList.map((item, index) => {
 
-                        return <MovieDetail 
+                        return <MovieDetail
                                     movie = {item}
                                     key = {`movie-list-key ${index}`}
                                 />  

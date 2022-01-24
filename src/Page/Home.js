@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "../Component/Header";
 import MovieList from "../Component/MovieList";
- 
+
 function Home() {
 
     return (
+
 
         <div>
 
@@ -17,11 +18,28 @@ function Home() {
                 
             </header>
 
+            {/* 
+            
+                Stone Order :
+
+                    - Space Stone
+                    - Mind Stone
+                    - Reality Stone
+                    - Power Stone
+                    - Time Stone
+                    - Soul Stone
+
+            */}
+
             <section>
 
                 <div className="movie_wrapper">
 
-                    <MovieList />
+                    <div className="watcher">
+
+                        <MovieList />
+
+                    </div>
 
                 </div>
 

@@ -179,6 +179,7 @@
         
         "id_chronological": 19,
         "id_date": 17,
+        "background": "./images/thor3.jpg",
         "title": "Thor: Ragnarok",
         "description": "Description ...",
         "date": "25 Octobre 2017"
@@ -189,6 +190,7 @@
         
         "id_chronological": 18,
         "id_date": 18,
+        "background": "./images/blackpanther.jpg",
         "title": "Black Panther",
         "description": "Description ...",
         "date": "16 Fevrier 2018"
@@ -199,6 +201,7 @@
         
         "id_chronological": 22,
         "id_date": 19,
+        "background": "./images/avengers3.jpg",
         "title": "Anvengers: Infinity War",
         "description": "Description ...",
         "date": "27 Avril 2018"
@@ -209,6 +212,7 @@
         
         "id_chronological": 20,
         "id_date": 20,
+        "background": "./images/antman2.jpg",
         "title": "Ant-Man et la Guêpe",
         "description": "Description ...",
         "date": "06 Juillet 2018"
@@ -219,6 +223,7 @@
         
         "id_chronological": 2,
         "id_date": 21,
+        "background": "./images/captainmarvel.jpg",
         "title": "Captain Marvel",
         "description": "Description ...",
         "date": "06 Mars 2019"
@@ -229,6 +234,7 @@
         
         "id_chronological": 23,
         "id_date": 22,
+        "background": "./images/avengers4.jpg",
         "title": "Avengers: Endgame",
         "description": "Description ...",
         "date": "24 Avril 2019"
@@ -239,6 +245,7 @@
         
         "id_chronological": 24,
         "id_date": 23,
+        "background": "./images/spiderman2.jpg",
         "title": "Spider-Man: Far From Home",
         "description": "Description ...",
         "date": "26 Juin 2019"
@@ -249,6 +256,7 @@
         
         "id_chronological": 21,
         "id_date": 24,
+        "background": "./images/blackwidow.jpg",
         "title": "Black Widow",
         "description": "Description ...",
         "date": "07 Juillet 2021"
@@ -259,6 +267,7 @@
         
         "id_chronological": 26,
         "id_date": 25,
+        "background": "./images/shangchi.jpg",
         "title": "Shang-Chi et la Légendre des Dix Anneaux",
         "description": "Description ...",
         "date": "01 Septembre 2021"
@@ -269,6 +278,7 @@
         
         "id_chronological": 25,
         "id_date": 26,
+        "background": "./images/eternals.jpg",
         "title": "Les Eternels",
         "description": "Description ...",
         "date": "03 Novembre 2021"
@@ -279,6 +289,7 @@
         
         "id_chronological": 27,
         "id_date": 27,
+        "background": "./images/spiderman3.jpg",
         "title": "Spider-Man: Now Way Home",
         "description": "Description ...",
         "date": "15 Decembre 2021"

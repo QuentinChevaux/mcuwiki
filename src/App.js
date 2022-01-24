@@ -5,12 +5,13 @@ import Lexique from './Page/Lexique';
 import Films from './Page/Films';
 import Series from './Page/Series';
 
+
 function App() {
 
   return (
 
     <div className="App">
-      
+     
       <BrowserRouter>
       
         <Routes>
@@ -26,7 +27,7 @@ function App() {
         </Routes>
 
       </BrowserRouter>
-      
+
     </div>
 
   );
