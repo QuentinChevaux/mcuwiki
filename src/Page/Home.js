@@ -21,19 +21,6 @@ function Home() {
                 
             </header>
 
-            {/* 
-            
-                Stone Order :
-
-                    - Space Stone
-                    - Mind Stone
-                    - Reality Stone
-                    - Power Stone
-                    - Time Stone
-                    - Soul Stone
-
-            */}
-
             <section>
 
                 <div className="movie_wrapper">

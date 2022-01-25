@@ -188,10 +188,30 @@ nav li {
 
 /* Stone Easter Egg */
 
+.stones {
+
+  width: 10px;
+
+}
+
+#powerstone {
+
+  top: 2408px;
+  left: 543px;
+
+
+}
+
 #spacestone {
 
-  top: 44.9%;
-  right: 9.15%;
-  width: 10px;
+  top: 553px;
+  right: 176px;
+
+}
+
+#mindstone {
+
+  top: 2857px;
+  left: 1174px;
 
 }
