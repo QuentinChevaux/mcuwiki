@@ -20,6 +20,9 @@ import MindStone from '../Images/mind_stone.png';
 
 */
 
+                // USE STATE QUI CHANGE LETAT DE LA STONE CLIQUE DE FALSE A TRUE + USE EFFECT QUI CHECK SI TOUS ON ETE CLIQUE ET ESSAYER D'AJOUTER UN ORDRE
+
+
 function EasterEgg() {
 
     let audio = new Audio(sound)
