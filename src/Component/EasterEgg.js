@@ -4,19 +4,20 @@ import SpaceStone from '../Images/space_stone.png';
 
 function EasterEgg() {
 
+
+
     let audio = new Audio(sound)
 
-    let start_audio = () => {
+    let play_audio = () => {
 
-        audio.volume = .05;
+        audio.volume = .1;
         audio.play();
 
     }
 
     let spacestoneclicked = () => {
 
-        alert('Space Stone Clicked');
-        start_audio();
+        play_audio();
 
     }
 
@@ -24,7 +25,7 @@ function EasterEgg() {
         
         <div>
 
-            <img src={SpaceStone} onClick={spacestoneclicked} className='stone absolute' id='spacestone'/>
+            <img src={SpaceStone} onClick={spacestoneclicked} className='absolute' id='spacestone'/>
 
         </div>
 

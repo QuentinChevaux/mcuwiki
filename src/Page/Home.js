@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../Component/Header";
 import MovieList from "../Component/MovieList";
 import EasterEgg from "../Component/EasterEgg";
+import SizeCheck from "../Component/SizeCheck";
 
 function Home() {
 
-    return (
+    const isDesktop = SizeCheck();
 
+    return (
 
         <div>
 
@@ -46,7 +48,13 @@ function Home() {
 
             </section>
 
-            <EasterEgg />
+            <div>
+
+                { isDesktop ? <EasterEgg /> : null }
+
+            </div>
+
+            
 
         </div>
 

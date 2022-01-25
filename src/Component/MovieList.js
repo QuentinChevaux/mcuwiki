@@ -77,8 +77,6 @@ class MovieList extends Component {
 
                     <p>Thanos the End is Near Easter Egg with the Stones</p>
 
-                    <p></p>
-
                 </div>
 
                 <div className="flex_center">
